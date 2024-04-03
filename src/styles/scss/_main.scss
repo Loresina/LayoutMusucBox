@@ -1,0 +1,65 @@
+main {
+    width: 100%;
+    background-image: url('/src/img/banner.png');
+    background-position: center;
+    background-size: cover;
+
+    & .container {
+        @include flex(space-between, center);
+        flex-direction: column;
+        padding: 200px 120px;
+    }    
+   
+}
+
+.main-infotext {
+    // display: block;
+    @include font(16px, 400, 24px, center);
+    margin: 31px 0 17px;
+}
+
+.main-form {
+    position: relative;
+
+    @include flex(space-between, center);
+    flex-direction: column;
+    max-width: 570px;
+    gap: 24px;
+}
+
+.main-form-inputs {
+    @include flex(space-between, center);
+    gap: 24px;
+}
+
+.main-form-input {
+    min-width: 273px;
+    border: 2px solid $grey;
+    background: transparent;
+    border-radius: 3px;
+    padding: 16px 0 16px 22px;
+    color: $white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        @include font(14px, 700, 16px, left);
+        color: $white;
+    }
+}
+
+.main-form-button {
+    width: 100%;
+
+    @include font(13px, 400, 15px, left);
+    text-align: center;
+    color: $white;
+    background: $green;
+    padding: 21px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,80 @@
+$wrap: 1440px;
+$container: 1240px;
+$marg: 0 auto;
+$white: #FFF;
+$black: #08020D;
+$grey-light: #E0E0E0;
+$grey: #CACACA;
+$grey-dark: #757575;
+$dark: #3C3B3D;
+$green: #34C176;
+$orange: #F89202;
+$purple: #5328A1;
+$red: #95390C;
+$main-font: 'Roboto', sans-serif;
+$text: 14px;
+$line-height: 1.5;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin font($fs, $fw, $lh, $ta) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    text-align: $ta;
+  }
+
+body {
+    background: #5328A1;
+    margin: $marg;
+    font-family: $main-font;
+    color: $grey;
+    line-height: $line-height;
+}
+
+.wrapper {
+    position: relative;
+    max-width: $wrap;
+    margin: $marg;
+
+    // border: 1px solid red;
+}
+
+.container {
+    position: relative;
+    max-width: $container;
+    margin: $marg;
+    padding: 0 20px;
+
+    // background: red;
+    // border: 1px solid yellow;
+}
+
+h1 {
+    @include font(60px, 700, 90px, center);
+    text-transform: uppercase;
+}
+
+h2 {
+    @include font(38px, 700, 57px, center);
+    text-transform: uppercase;
+}
+
+h3 {
+    @include font(24px, 400, 45px, center);
+    text-transform: uppercase;
+}
+
+h4 {
+    @include font(18px, 700, 27px, left);
+}
+
+// p {
+//     margin-block-start: 0;
+//     margin-block-end: 0;
+// }
+

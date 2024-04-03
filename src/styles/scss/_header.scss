@@ -1,0 +1,69 @@
+.header {
+    @include flex(space-between, center);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+
+    @include font(11px, 400, 16.5px, left);
+    text-transform: uppercase;
+
+}
+
+.header__logolinks {
+    @include flex(center, center);
+    gap: 90px;
+    height: 100%;
+}
+
+.header__logo {
+    @include flex(space-between, center);
+    gap: 16px;
+
+    & span {
+        vertical-align: center;
+        color: $white;
+    }
+}
+
+.header__logo-img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    & img {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+    }
+}
+
+.header__links {
+    @include flex(space-between, center);
+    gap: 24px;
+
+    & a {
+        color: $grey;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.header__input {
+    width: 248px;
+    background: $dark;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    color: $white;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $grey-dark;
+    }
+}

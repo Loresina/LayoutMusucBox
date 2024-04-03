@@ -1,0 +1,84 @@
+.page-pricing {
+    margin-top: 100px;
+
+}
+
+.pricings {
+    width: 100%;
+    margin: 48px 0 45px;
+
+    @include flex(space-between, center);
+    gap: 50px;
+
+    // border: 1px solid red;
+}
+
+.pricing-item {
+    min-width: 366px;
+
+    // background: purple;
+    text-align: center;
+    border-radius: 16px;
+    padding: 16px 25px 64px;
+
+   & a {
+    display: block;
+
+    @include font(16px, 400, 24px, center);
+    text-transform: uppercase;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 21px;
+    margin-bottom: 62px;
+   }
+
+   & h3 {
+    margin-bottom: 198px;
+   }
+}
+
+.bg-free {
+    background-image: url('/src/img/bgFree.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-standart {
+    background-image: url('/src/img/bgStandart.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-premium {
+    background-image: url('/src/img/bgPremium.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.pricing-value {
+    margin-bottom: 38px;
+    text-transform: uppercase;
+    vertical-align: top;
+
+    @include font(64px, 400, 64px, center);
+
+    span:last-child {
+        vertical-align: top;
+
+        @include font(32px, 400, 44px, center);        
+    }
+}
+
+.pricing-info {
+    @include font(13px, 400, 19px, center);
+}
+
+
+.pricing-footer {
+    @include font(16px, 400, 24px, center);
+}
+
+
+
+
