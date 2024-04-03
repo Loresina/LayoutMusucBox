@@ -1,0 +1,65 @@
+.news {
+    margin-top: 100px;
+}
+
+.news__items {
+    @include flex(space-between, center);
+    flex-direction: column;
+    gap: 65px;
+    margin-top: 48px;
+}
+
+.news-item {
+    @include flex(space-between, center);
+    gap: 50px;
+    align-items: stretch;
+    width: 100%
+}
+
+.news-item__body {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+
+    & h3 {
+        @include font(30px, 400, 45px, left);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        text-align: left;
+        color: $grey;
+        margin-bottom: 24px;
+    }
+}
+
+.news-item__author {
+    @include flex(space-between, center);
+    gap: 16px;
+    margin-bottom: 48px;
+
+    @include font(12px, 400, 19.2px, left);
+
+    .news-item__author-name {
+        color: $orange;
+        text-transform: uppercase;
+    }
+
+    .news-item__author-date {
+        color: $grey;
+    }
+
+}
+
+.news-item__link {
+    // display: block;
+    width: 135px;
+    padding: 16px 30px;
+    border-radius: 5px;
+    border: 1px solid $grey;
+
+    @include font(12px, 400, 19.2px, center);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $grey;
+}

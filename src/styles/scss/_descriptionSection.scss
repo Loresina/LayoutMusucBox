@@ -6,10 +6,7 @@
 
     @include flex(space-between, center);
     flex-direction: column;
-    padding: 200px 120px;
-
-    color: $white
-   
+    padding: 200px 120px;   
 }
 
 .description__infotext {

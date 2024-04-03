@@ -70,4 +70,29 @@
            }
     }
 
+    .news__items {
+        & > :last-child {
+            flex-direction: column-reverse;
+        }
+        
+    }
+
+
+    .news-item {
+    flex-direction: column;
+    }
+
+    .news-item__body {
+        & h3 {
+            @include font(16px, 400, 24px, left);
+            margin-bottom: 16px;
+        }
+    
+    }
+
+    
+
+
+
+
 }

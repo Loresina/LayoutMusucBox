@@ -12,7 +12,8 @@ $orange: #F89202;
 $purple: #5328A1;
 $red: #95390C;
 $main-font: 'Roboto', sans-serif;
-$text: 14px;
+
+// $text: 14px;
 $line-height: 1.5;
 
 @mixin flex($jc, $ai) {
@@ -31,9 +32,11 @@ $line-height: 1.5;
 body {
     background: #5328A1;
     margin: $marg;
+
+    @include font(16px, 400, 24px, center);
     font-family: $main-font;
-    color: $grey;
-    line-height: $line-height;
+    color: $white;
+   
 }
 
 .wrapper {

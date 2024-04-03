@@ -8,6 +8,7 @@
 
     @include font(11px, 400, 16.5px, left);
     text-transform: uppercase;
+    color: $grey;
 
 }
 
@@ -22,7 +23,6 @@
     gap: 16px;
 
     & span {
-        vertical-align: center;
         color: $white;
     }
 }
