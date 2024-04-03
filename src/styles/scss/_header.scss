@@ -1,9 +1,10 @@
 .header {
     @include flex(space-between, center);
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 1;
-
+    left: 50%;
+    transform: translate(-50%);
 
     @include font(11px, 400, 16.5px, left);
     text-transform: uppercase;
@@ -31,15 +32,15 @@
     width: 24px;
     height: 24px;
 
-    & img {
-        position: absolute;
-        left: -1px;
-        top: -1px;
-    }
+    // & img {
+    //     position: absolute;
+    //     left: -1px;
+    //     top: -1px;
+    // }
 }
 
 .header__links {
-    @include flex(space-between, center);
+    @include flex(space-between, flex-start);
     gap: 24px;
 
     & a {

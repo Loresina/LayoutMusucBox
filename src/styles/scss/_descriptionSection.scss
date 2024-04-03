@@ -1,38 +1,36 @@
-main {
+.description {
     width: 100%;
     background-image: url('/src/img/banner.png');
     background-position: center;
     background-size: cover;
 
-    & .container {
-        @include flex(space-between, center);
-        flex-direction: column;
-        padding: 200px 120px;
-    }    
+    @include flex(space-between, center);
+    flex-direction: column;
+    padding: 200px 120px;
+
+    color: $white
    
 }
 
-.main-infotext {
-    // display: block;
+.description__infotext {
     @include font(16px, 400, 24px, center);
     margin: 31px 0 17px;
 }
 
-.main-form {
+.description__form {
     position: relative;
-
     @include flex(space-between, center);
     flex-direction: column;
     max-width: 570px;
     gap: 24px;
 }
 
-.main-form-inputs {
+.description__form-inputs {
     @include flex(space-between, center);
     gap: 24px;
 }
 
-.main-form-input {
+.description__form-input {
     min-width: 273px;
     border: 2px solid $grey;
     background: transparent;
@@ -45,19 +43,19 @@ main {
     }
 
     &::placeholder {
-        @include font(14px, 700, 16px, left);
+        @include font(14px, 700, 16.41px, left);
         color: $white;
     }
 }
 
-.main-form-button {
+.description__form-button {
     width: 100%;
 
     @include font(13px, 400, 15px, left);
     text-align: center;
     color: $white;
     background: $green;
-    padding: 21px;
+    padding: 20px;
     border: none;
     text-transform: uppercase;
     border-radius: 5px;

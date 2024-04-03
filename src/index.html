@@ -17,8 +17,8 @@
 <body>
   <div class="wrapper">
 
-    <header class="container top-25">
-      <nav class="header">      
+    <header>
+      <nav class="container header top-25">      
         <div class="header__logolinks">
           <div class="header__logo">
             <div class="header__logo-img">
@@ -38,28 +38,28 @@
           </div>
         </div>
       
-        <!-- <label for="navInput">ПОИСК...</label> -->
-        <input type="search" placeholder="ПОИСК..." class="header__input">
+        <label for="header__input" hidden>ПОИСК...</label>
+        <input type="search" id="header__input" placeholder="ПОИСК..." class="header__input">
       </nav>
   </header>
 
-    <!-- <main id="page-description">
-      <div class="container">
-        <h1 class="main-title">Онлайн музыка где угодно</h1>
-        <h2 class="main-sibtitle">Без ограничений</h2>
+    <section id="page-description" class="container description">
+        <h1 class="description__title">Онлайн музыка где угодно</h1>
+        <h2 class="description__sibtitle">Без ограничений</h2>
   
-        <span class="main-infotext">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
+        <span class="description__infotext">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
   
-        <form class="main-form">
-          <div class="main-form-inputs">
-            <input type="text" placeholder="Имя" class="main-form-input">
-            <input type="text" placeholder="Email" class="main-form-input">
+        <form class="description__form">
+          <div class="description__form-inputs">
+            <label for="description__form-name" hidden>Имя</label>
+            <input type="text" id="description__form-name" placeholder="Имя" class="description__form-input">
+            <label for="description__form-email" hidden>Email</label>
+            <input type="text" id="description__form-email" placeholder="Email" class="description__form-input">
           </div>
           
-          <button type="submit" class="main-form-button">Получить доступ</button>
+          <button type="submit" class="description__form-button">Получить доступ</button>
         </form>
-      </div>
-    </main> -->
+    </section>
 
     <!-- <section id="page-pricing" class="page-pricing">
       <div class="container">

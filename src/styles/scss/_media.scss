@@ -14,50 +14,46 @@
     }
 
 
-    header {
+    .header {
         @include font(11px, 700, 13px, left);
-    }
-
-    .header-nav {
         flex-direction: column;
         align-items: start;
         gap: 18px;
     }
+
     
-    .header-nav-logolinks {
+    .header__logolinks {
         flex-direction: column;
         align-items: start;
         gap: 17px;
     }
     
-    .header-nav-links {
+    .header__links {
         flex-direction: column;
         gap: 3px;
     }
     
-    .header-nav-input {
+    .header__input {
         width: 100%;
     }
 
-    main {
-        & .container {
-            padding: 248px 0 200px;
-        }    
+    .description {
+        padding: 248px 0 200px;
     }
 
-    .main-infotext {
+    .description__infotext {
         margin: 16px;
     }
 
-    .main-form {
+    .description__form {
         max-width: 374px;
     }
 
-    .main-form-inputs {
+    .description__form-inputs {
         flex-direction: column;
     }
     
-    .main-form-input {
+    .description__form-input {
         min-width: 374px;
     }
 
