@@ -19,6 +19,7 @@
 
 .description__form {
     position: relative;
+
     @include flex(space-between, center);
     flex-direction: column;
     max-width: 570px;

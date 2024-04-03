@@ -57,24 +57,17 @@
         min-width: 374px;
     }
 
-    .pricings {
+    .prices__items {
         flex-direction: column;
-
-        // margin: 48px 0 45px 0;
-        // gap: 50px;
-        // border: 1px solid red;
     }
 
 
-
-    .pricing-item {
+    .price {
         padding: 12px 25px 64px;
     
         & h3 {
             margin-bottom: 205px;
            }
     }
-
-
 
 }
