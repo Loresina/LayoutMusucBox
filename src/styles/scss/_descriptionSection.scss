@@ -48,14 +48,13 @@
 
 .description__form-button {
     width: 100%;
-
-    @include font(13px, 400, 15px, left);
-    text-align: center;
-    color: $white;
     background: $green;
     padding: 20px;
     border: none;
-    text-transform: uppercase;
     border-radius: 5px;
+
+    @include font(13px, 400, 15px, center);
+    text-transform: uppercase;
+    color: $white;
 }
 

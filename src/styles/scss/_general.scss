@@ -30,7 +30,7 @@ $line-height: 1.5;
   }
 
 body {
-    background: #5328A1;
+    background: $black;
     margin: $marg;
 
     @include font(16px, 400, 24px, center);

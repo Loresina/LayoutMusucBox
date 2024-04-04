@@ -21,7 +21,7 @@ a {
 }
 
 body {
-  background: #5328A1;
+  background: #08020D;
   margin: 0 auto;
   font-size: 16px;
   font-weight: 400;
@@ -214,17 +214,16 @@ h4 {
 
 .description__form-button {
   width: 100%;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 15px;
-  text-align: left;
-  text-align: center;
-  color: #FFF;
   background: #34C176;
   padding: 20px;
   border: none;
-  text-transform: uppercase;
   border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
 }
 
 .prices {
@@ -389,6 +388,50 @@ h4 {
   color: #CACACA;
 }
 
+.app {
+  margin-top: 100px;
+}
+
+.app-data {
+  max-width: 1077px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 144px;
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+
+.app-data__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
+}
+.app-data__info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #CACACA;
+}
+
+.app-data__button {
+  width: 131px;
+  height: 53px;
+  border-radius: 32px;
+  background: #95390C;
+  padding: 17px 40px;
+  border: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+  color: #FFF;
+}
+
 @media (width <= 414px) {
   h1 {
     font-size: 30px;
@@ -461,6 +504,14 @@ h4 {
     line-height: 24px;
     text-align: left;
     margin-bottom: 16px;
+  }
+  .app-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0;
   }
 }
 
