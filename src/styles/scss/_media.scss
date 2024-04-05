@@ -74,7 +74,6 @@
         & > :last-child {
             flex-direction: column-reverse;
         }
-        
     }
 
     .news-item {
@@ -91,16 +90,23 @@
 
     .app-data {
         width: 100%;
-
-        @include flex(space-between, center);
+        align-items: center;
         flex-direction: column-reverse;
         gap: 0;
     }
-    
 
-    
+    .footer-menu {
+        flex-direction: column;
+        gap: 30px;
+    }
 
+    .footer-menu__width {
+        flex-basis: 0;
+    }
 
-
+    .footer-low-menu {
+        align-items: flex-start;
+        flex-direction: column;        
+    }
 
 }

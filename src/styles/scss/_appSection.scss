@@ -4,7 +4,6 @@
 
 .app-data {
     max-width: 1077px;
-
     @include flex(space-between, flex-start);
     gap: 144px;
     margin-top: 48px;
