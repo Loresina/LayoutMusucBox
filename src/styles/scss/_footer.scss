@@ -1,12 +1,14 @@
 .footer {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
     padding-top: 62px;
+
     // border: 1px solid red;
 }
 
 .footer-menu {
     position: relative;
     width: 100%;
+
     @include flex(flex-start, flex-start);
     flex-basis: 270px;
     gap: 40px;

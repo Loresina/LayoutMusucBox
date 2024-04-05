@@ -91,6 +91,14 @@ h4 {
   margin-top: 15px;
 }
 
+.bg-purple {
+  background: #5328A1;
+}
+
+.bg-red {
+  background: #95390C;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -165,6 +173,9 @@ h4 {
   background-image: url("/src/img/banner.png");
   background-position: center;
   background-size: cover;
+}
+
+.description-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -426,7 +437,6 @@ h4 {
   width: 131px;
   height: 53px;
   border-radius: 32px;
-  background: #95390C;
   padding: 17px 40px;
   border: none;
   font-size: 13px;
@@ -434,6 +444,55 @@ h4 {
   line-height: 19.2px;
   text-align: center;
   color: #FFF;
+}
+
+.artist {
+  width: 100%;
+  background-image: url("/src/img/banner-artist1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-content {
+  padding: 250px 20px 223px 20px;
+  text-align: left;
+}
+.artist-content h1 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.artist-content p {
+  margin-bottom: 48px;
+}
+
+.artist-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.artist-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 21px 0 21px 31px;
+}
+.artist-button img {
+  width: 20px;
+  filter: invert(100%);
+}
+.artist-button span {
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
 }
 
 .footer {
@@ -580,6 +639,20 @@ h4 {
   }
   .footer-low-menu {
     align-items: flex-start;
+    flex-direction: column;
+  }
+  .artist-content {
+    padding: 225px 20px 223px;
+    text-align: left;
+  }
+  .artist-content h1 {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .artist-content p {
+    margin-bottom: 48px;
+  }
+  .artist-buttons {
     flex-direction: column;
   }
 }

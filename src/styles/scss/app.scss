@@ -2,11 +2,12 @@
 @import "general";
 @import "positioning";
 @import "header";
-@import "descriptionSection";
-@import "pricesSection";
-@import "newsSection";
-@import "appSection";
-@import "footerSection";
+@import "./sections/descriptionSection";
+@import "./sections/pricesSection";
+@import "./sections/newsSection";
+@import "./sections/appSection";
+@import "./sections/artistSection";
+@import "footer";
 @import "media";
 
 

@@ -3,7 +3,9 @@
     background-image: url('/src/img/banner.png');
     background-position: center;
     background-size: cover;
+}
 
+.description-content {
     @include flex(space-between, center);
     flex-direction: column;
     padding: 200px 120px;   
