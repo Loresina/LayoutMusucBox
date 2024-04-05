@@ -76,8 +76,11 @@ h4 {
     @include font(18px, 700, 27px, left);
 }
 
-// p {
-//     margin-block-start: 0;
-//     margin-block-end: 0;
-// }
+.text-small {
+    @include font(12.8px, 400, 19.2px, left);
+}
 
+.text-small-bold {
+    @include font(12.8px, 700, 19.2px, left);
+    text-transform: uppercase;
+}

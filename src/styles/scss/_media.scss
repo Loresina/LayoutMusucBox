@@ -37,7 +37,7 @@
         width: 100%;
     }
 
-    .description {
+    .description-content {
         padding: 248px 0 200px;
     }
 
@@ -125,6 +125,10 @@
 
     .artist-buttons  {
         flex-direction: column;
+    }
+
+    .popular-track-item {
+        margin-right: 0;
     }
 
 }

@@ -1,0 +1,32 @@
+.popular h2 {
+    text-align: left;
+}
+
+.popular-track-content {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 48px;
+}
+
+.popular-track-item {
+    @include flex(space-between, center);
+    flex-basis: 551px;
+    margin-right: 24px;
+}
+
+.popular-track-item__img {
+    width: 55px;
+}
+
+.popular-track-item__description {
+    @include flex(center, flex-start);
+    flex-direction: column;
+
+    margin-left: 15px;
+}
+
+.popular-track-item__time {
+    flex-grow: 1;
+    text-align: right;
+}
