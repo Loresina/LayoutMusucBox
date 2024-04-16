@@ -1,0 +1,16 @@
+.discography-items {
+    @include flex(start, center);
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 48px;
+}
+
+.discography-item {
+    width: 250px;
+    margin-bottom: -25px;
+}
+
+.discography-item__img {
+    width: 250px;
+    margin-bottom: 12px;
+}
