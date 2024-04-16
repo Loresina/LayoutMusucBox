@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: #FFF;
 }
 
@@ -157,6 +157,7 @@ h4 {
   align-items: center;
   gap: 16px;
 }
+
 .header__logo span {
   color: #FFF;
 }
@@ -173,9 +174,11 @@ h4 {
   align-items: flex-start;
   gap: 24px;
 }
+
 .header__links a {
   color: #CACACA;
 }
+
 .header__links a:hover {
   color: #FFF;
 }
@@ -188,9 +191,11 @@ h4 {
   padding: 5px 10px;
   color: #FFF;
 }
+
 .header__input:focus {
   outline: none;
 }
+
 .header__input::placeholder {
   color: #757575;
 }
@@ -243,9 +248,11 @@ h4 {
   padding: 16px 0 16px 22px;
   color: #FFF;
 }
+
 .description__form-input:focus {
   outline: none;
 }
+
 .description__form-input::placeholder {
   font-size: 14px;
   font-weight: 700;
@@ -287,6 +294,7 @@ h4 {
   border-radius: 16px;
   padding: 16px 25px 64px;
 }
+
 .price button {
   width: 100%;
   font-size: 16px;
@@ -300,6 +308,7 @@ h4 {
   padding: 20px;
   background: transparent;
 }
+
 .price h3 {
   margin-bottom: 198px;
 }
@@ -331,6 +340,7 @@ h4 {
   line-height: 64px;
   text-align: center;
 }
+
 .price__value span:last-child {
   vertical-align: top;
   font-size: 32px;
@@ -371,7 +381,6 @@ h4 {
 .news-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 50px;
   align-items: stretch;
   width: 100%;
@@ -383,6 +392,7 @@ h4 {
   align-items: flex-start;
   flex-direction: column;
 }
+
 .news-item__body h3 {
   font-size: 30px;
   font-weight: 400;
@@ -391,6 +401,7 @@ h4 {
   text-transform: capitalize;
   margin-bottom: 30px;
 }
+
 .news-item__body p {
   text-align: left;
   color: #CACACA;
@@ -408,10 +419,12 @@ h4 {
   line-height: 19.2px;
   text-align: left;
 }
+
 .news-item__author .news-item__author-name {
   color: #F89202;
   text-transform: uppercase;
 }
+
 .news-item__author .news-item__author-date {
   color: #CACACA;
 }
@@ -452,6 +465,7 @@ h4 {
   gap: 16px;
   margin-top: 15px;
 }
+
 .app-data__info p {
   font-size: 16px;
   font-weight: 400;
@@ -481,13 +495,15 @@ h4 {
 }
 
 .artist-content {
-  padding: 250px 20px 223px 20px;
+  padding: 250px 20px 223px;
   text-align: left;
 }
+
 .artist-content h1 {
   text-align: left;
   margin-bottom: 16px;
 }
+
 .artist-content p {
   margin-bottom: 48px;
 }
@@ -509,10 +525,12 @@ h4 {
   border-radius: 5px;
   padding: 21px 0 21px 31px;
 }
+
 .artist-button img {
   width: 20px;
   filter: invert(100%);
 }
+
 .artist-button span {
   font-size: 12.8px;
   font-weight: 400;
@@ -563,6 +581,7 @@ h4 {
   flex-wrap: wrap;
   gap: 50px;
   margin-top: 48px;
+  margin-bottom: 125px;
 }
 
 .discography-item {
@@ -595,6 +614,7 @@ h4 {
   text-align: left;
   padding-bottom: 72px;
 }
+
 .footer-menu a {
   font-size: 16px;
   font-weight: 400;
@@ -602,6 +622,7 @@ h4 {
   text-align: center;
   color: #E0E0E0;
 }
+
 .footer-menu h4 {
   text-transform: uppercase;
 }
@@ -631,6 +652,7 @@ h4 {
   padding-top: 40px;
   padding-bottom: 49px;
 }
+
 .footer-low-menu a {
   color: #E0E0E0;
 }
@@ -640,16 +662,19 @@ h4 {
     font-size: 30px;
     line-height: 45px;
   }
+
   h2 {
     font-size: 18px;
     line-height: 27px;
   }
+
   h3 {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
   }
+
   .header {
     font-size: 11px;
     font-weight: 700;
@@ -659,48 +684,62 @@ h4 {
     align-items: start;
     gap: 18px;
   }
+
   .header__logolinks {
     flex-direction: column;
     align-items: start;
     gap: 17px;
   }
+
   .header__links {
     flex-direction: column;
     gap: 3px;
   }
+
   .header__input {
     width: 100%;
   }
+
   .description-content {
     padding: 248px 0 200px;
   }
+
   .description__infotext {
     margin: 16px;
   }
+
   .description__form {
     max-width: 374px;
   }
+
   .description__form-inputs {
     flex-direction: column;
   }
+
   .description__form-input {
     min-width: 374px;
   }
+
   .prices__items {
     flex-direction: column;
   }
+
   .price {
     padding: 12px 25px 64px;
   }
+
   .price h3 {
     margin-bottom: 205px;
   }
+
   .news__items > :last-child {
     flex-direction: column-reverse;
   }
+
   .news-item {
     flex-direction: column;
   }
+
   .news-item__body h3 {
     font-size: 16px;
     font-weight: 400;
@@ -708,40 +747,47 @@ h4 {
     text-align: left;
     margin-bottom: 16px;
   }
+
   .app-data {
     width: 100%;
     align-items: center;
     flex-direction: column-reverse;
     gap: 0;
   }
+
   .footer-menu {
     flex-direction: column;
     gap: 30px;
   }
+
   .footer-menu__width {
     flex-basis: 0;
   }
+
   .footer-low-menu {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .artist-content {
     padding: 225px 20px 223px;
     text-align: left;
   }
+
   .artist-content h1 {
     text-align: left;
     margin-bottom: 16px;
   }
+
   .artist-content p {
     margin-bottom: 48px;
   }
+
   .artist-buttons {
     flex-direction: column;
   }
+
   .popular-track-item {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

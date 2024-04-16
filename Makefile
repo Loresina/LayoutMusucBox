@@ -8,6 +8,3 @@ lint:
 
 style:
 	sass --watch ./src/styles/scss/app.scss:./src/styles/styles.css
-
-# deploy:
-# 	npx surge ./src/
