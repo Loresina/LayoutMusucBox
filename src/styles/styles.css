@@ -197,7 +197,7 @@ h4 {
 
 .description {
   width: 100%;
-  background-image: url("/src/img/banner.png");
+  background-image: url("../img/banner.png");
   background-position: center;
   background-size: cover;
 }
@@ -305,19 +305,19 @@ h4 {
 }
 
 .bg-free {
-  background-image: url("/src/img/bgFree.png");
+  background-image: url("../img/bgFree.png");
   background-position: center;
   background-size: cover;
 }
 
 .bg-standart {
-  background-image: url("/src/img/bgStandart.png");
+  background-image: url("../img/bgStandart.png");
   background-position: center;
   background-size: cover;
 }
 
 .bg-premium {
-  background-image: url("/src/img/bgPremium.png");
+  background-image: url("../img/bgPremium.png");
   background-position: center;
   background-size: cover;
 }
@@ -475,7 +475,7 @@ h4 {
 
 .artist {
   width: 100%;
-  background-image: url("/src/img/banner-artist1.png");
+  background-image: url("../img/banner-artist1.png");
   background-position: center;
   background-size: cover;
 }
