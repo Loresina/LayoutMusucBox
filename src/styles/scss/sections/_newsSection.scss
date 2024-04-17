@@ -13,11 +13,23 @@
     @include flex(space-between, center);
     gap: 50px;
     align-items: stretch;
-    width: 100%
+    width: 100%;
+}
+
+.news-item__img {
+    flex-basis: 575px;
+    @include flex(center, center);
+    overflow: hidden;
+
+    & img {
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 .news-item__body {
     @include flex(flex-start, flex-start);
+    flex-basis: 575px;
     flex-direction: column;
 
     & h3 {
