@@ -580,8 +580,14 @@ h4 {
 }
 
 .discography-item {
-  width: 250px;
   margin-bottom: -25px;
+}
+.discography-item img {
+  width: 100%;
+}
+.discography-item span {
+  display: block;
+  text-align: left;
 }
 
 .discography-item__img {
@@ -591,6 +597,14 @@ h4 {
 
 .similar h4 {
   text-align: center;
+}
+
+.similar span {
+  text-align: center;
+}
+
+.similar img {
+  border-radius: 50%;
 }
 
 .footer {
@@ -668,9 +682,6 @@ h4 {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-  }
-  .description-content {
-    padding: 248px 0 200px;
   }
   .description-content {
     padding: 248px 0 200px;
@@ -781,7 +792,7 @@ h4 {
     gap: 30px;
   }
   .footer-menu__width {
-    flex-basis: 0px;
+    flex-basis: 0;
   }
   .footer-low-menu {
     align-items: flex-start;
@@ -803,6 +814,28 @@ h4 {
   }
   .popular-track-item {
     margin-right: 0;
+  }
+}
+@media (width <= 495px) {
+  .artist-content {
+    padding: 225px 20px 223px;
+    text-align: left;
+  }
+  .artist-content h1 {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .artist-content p {
+    margin-bottom: 48px;
+  }
+  .artist-buttons {
+    flex-direction: column;
+  }
+  .popular-track-item {
+    margin-right: 0;
+  }
+  .discography-item {
+    width: 137px;
   }
 }
 

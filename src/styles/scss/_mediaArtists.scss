@@ -1,0 +1,27 @@
+@media (width <= 495px) {
+  .artist-content {
+    padding: 225px 20px 223px;
+    text-align: left;
+
+    & h1 {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    & p {
+      margin-bottom: 48px;
+    }
+  }
+
+  .artist-buttons {
+    flex-direction: column;
+  }
+
+  .popular-track-item {
+    margin-right: 0;
+  }
+
+  .discography-item {
+    width: 137px;
+  }
+}

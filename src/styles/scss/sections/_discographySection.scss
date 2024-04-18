@@ -1,17 +1,25 @@
 .discography-items {
-    @include flex(start, center);
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 48px;
-    margin-bottom: 125px;
+  @include flex(start, center);
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 48px;
+  margin-bottom: 125px;
 }
 
 .discography-item {
-    width: 250px;
-    margin-bottom: -25px;
+  margin-bottom: -25px;
+
+  & img {
+    width: 100%;
+  }
+
+  & span {
+    display: block;
+    text-align: left;
+  }
 }
 
 .discography-item__img {
-    width: 250px;
-    margin-bottom: 12px;
+  width: 250px;
+  margin-bottom: 12px;
 }
