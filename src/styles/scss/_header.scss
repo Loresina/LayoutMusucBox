@@ -1,70 +1,63 @@
 .header {
-    @include flex(space-between, center);
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%);
+  @include flex(space-between, center);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
 
-    @include font(11px, 400, 16.5px, left);
-    text-transform: uppercase;
-    color: $grey;
-
+  @include font(11px, 400, 16.5px, left);
+  text-transform: uppercase;
+  color: $grey;
 }
 
 .header__logolinks {
-    @include flex(center, center);
-    gap: 90px;
-    height: 100%;
+  @include flex(center, center);
+  gap: 90px;
+  height: 100%;
 }
 
 .header__logo {
-    @include flex(space-between, center);
-    gap: 16px;
+  @include flex(space-between, center);
+  gap: 16px;
 
-    & span {
-        color: $white;
-    }
+  & span {
+    color: $white;
+  }
 }
 
 .header__logo-img {
-    position: relative;
-    width: 24px;
-    height: 24px;
-
-    // & img {
-    //     position: absolute;
-    //     left: -1px;
-    //     top: -1px;
-    // }
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 
 .header__links {
-    @include flex(space-between, flex-start);
-    gap: 24px;
+  @include flex(space-between, flex-start);
+  gap: 24px;
 
-    & a {
-        color: $grey;
+  & a {
+    color: $grey;
 
-        &:hover {
-            color: $white;
-        }
+    &:hover {
+      color: $white;
     }
+  }
 }
 
 .header__input {
-    width: 248px;
-    background: $dark;
-    border-radius: 20px;
-    border: none;
-    padding: 5px 10px;
-    color: $white;
-    
-    &:focus {
-        outline: none;
-    }
+  width: 248px;
+  background: $dark;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  color: $white;
 
-    &::placeholder {
-        color: $grey-dark;
-    }
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $grey-dark;
+  }
 }

@@ -1,58 +1,51 @@
 .footer {
-    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    padding-top: 62px;
-
-    // border: 1px solid red;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  padding-top: 62px;
 }
 
 .footer-menu {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 
-    @include flex(flex-start, flex-start);
-    flex-basis: 270px;
-    gap: 40px;
-    text-align: left;
+  @include flex(flex-start, flex-start);
+  flex-basis: 270px;
+  gap: 40px;
+  text-align: left;
 
-    padding-bottom: 72px;
+  padding-bottom: 72px;
 
+  & a {
+    @include font(16px, 400, 24px, center);
+    color: $grey-light;
+  }
 
-    & a {
-        @include font(16px, 400, 24px, center);
-        color: $grey-light;
-    }
-
-    & h4 {
-        text-transform: uppercase;
-    }
+  & h4 {
+    text-transform: uppercase;
+  }
 }
 
 .footer-menu__width {
-    flex-basis: 270px;
+  flex-basis: 270px;
 }
 
-
 .footer-menu__social-media {
-    @include flex(flex-start, center);
-    gap: 24px;
+  @include flex(flex-start, center);
+  gap: 24px;
 }
 
 .footer-line {
-    width: 100%;
-    height: 2px;
-    background: $grey-light;
+  width: 100%;
+  height: 2px;
+  background: $grey-light;
 }
 
 .footer-low-menu {
-    @include flex(flex-start, center);
-    gap: 16px;
-    padding-top: 40px;
-    padding-bottom: 49px;
+  @include flex(flex-start, center);
+  gap: 16px;
+  padding-top: 40px;
+  padding-bottom: 49px;
 
-    & a {
-        color: $grey-light;
-    }
-    
+  & a {
+    color: $grey-light;
+  }
 }
-
-

@@ -1,62 +1,61 @@
 .description {
-    width: 100%;
-    background-image: url('../img/banner.png');
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  background-image: url("../img/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .description-content {
-    @include flex(space-between, center);
-    flex-direction: column;
-    padding: 200px 120px;   
+  @include flex(space-between, center);
+  flex-direction: column;
+  padding: 200px 120px;
 }
 
 .description__infotext {
-    @include font(16px, 400, 24px, center);
-    margin: 31px 0 17px;
+  @include font(16px, 400, 24px, center);
+  margin: 31px 0 17px;
 }
 
 .description__form {
-    position: relative;
+  position: relative;
 
-    @include flex(space-between, center);
-    flex-direction: column;
-    max-width: 570px;
-    gap: 24px;
+  @include flex(space-between, center);
+  flex-direction: column;
+  max-width: 570px;
+  gap: 24px;
 }
 
 .description__form-inputs {
-    @include flex(space-between, center);
-    gap: 24px;
+  @include flex(space-between, center);
+  gap: 24px;
 }
 
 .description__form-input {
-    min-width: 273px;
-    border: 2px solid $grey;
-    background: transparent;
-    border-radius: 3px;
-    padding: 16px 0 16px 22px;
+  min-width: 273px;
+  border: 2px solid $grey;
+  background: transparent;
+  border-radius: 3px;
+  padding: 16px 0 16px 22px;
+  color: $white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    @include font(14px, 700, 16.41px, left);
     color: $white;
-
-    &:focus {
-        outline: none;
-    }
-
-    &::placeholder {
-        @include font(14px, 700, 16.41px, left);
-        color: $white;
-    }
+  }
 }
 
 .description__form-button {
-    width: 100%;
-    background: $green;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
+  width: 100%;
+  background: $green;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
 
-    @include font(13px, 400, 15px, center);
-    text-transform: uppercase;
-    color: $white;
+  @include font(13px, 400, 15px, center);
+  text-transform: uppercase;
+  color: $white;
 }
-

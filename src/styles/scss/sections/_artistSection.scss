@@ -1,45 +1,45 @@
 .artist {
-    width: 100%;
-    background-image: url('../img/banner-artist1.png');
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  background-image: url("../img/banner-artist1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .artist-content {
-    padding: 250px 20px 223px 20px;
+  padding: 250px 20px 223px 20px;
+  text-align: left;
+
+  & h1 {
     text-align: left;
+    margin-bottom: 16px;
+  }
 
-    & h1 {
-        text-align: left;
-        margin-bottom: 16px;
-    }
-
-    & p {
-        margin-bottom: 48px;
-    }
+  & p {
+    margin-bottom: 48px;
+  }
 }
 
-.artist-buttons  {
-    @include flex(flex-start, flex-start);
-    gap: 24px;
+.artist-buttons {
+  @include flex(flex-start, flex-start);
+  gap: 24px;
 }
 
 .artist-button {
-    @include flex(flex-start, center);
-    gap: 16px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-    padding: 21px 0 21px 31px;
+  @include flex(flex-start, center);
+  gap: 16px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 21px 0 21px 31px;
 
-    & img {
-        width: 20px;
-        filter: invert(100%);
-    }
+  & img {
+    width: 20px;
+    filter: invert(100%);
+  }
 
-    & span {
-        @include font(12.8px, 400, 19.2px, center);
-        text-transform: uppercase;
-        color: white;
-    }
+  & span {
+    @include font(12.8px, 400, 19.2px, center);
+    text-transform: uppercase;
+    color: white;
+  }
 }

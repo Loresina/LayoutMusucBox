@@ -1,36 +1,34 @@
 .app {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .app-data {
-    max-width: 1077px;
-    @include flex(space-between, flex-start);
-    gap: 144px;
-    margin-top: 48px;
-    margin-bottom: 100px;
+  max-width: 1077px;
+  @include flex(space-between, flex-start);
+  gap: 144px;
+  margin-top: 48px;
+  margin-bottom: 100px;
 }
 
 .app-data__info {
-    @include flex(flex-start, flex-start);
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 15px;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
 
-    & p {
-        @include font(16px, 400, 24px, left);
-        color: $grey;
-    }
+  & p {
+    @include font(16px, 400, 24px, left);
+    color: $grey;
+  }
 }
-
 
 .app-data__button {
-    width: 131px;
-    height: 53px;
-    border-radius: 32px;
-    padding: 17px 40px;
-    border: none;
+  width: 131px;
+  height: 53px;
+  border-radius: 32px;
+  padding: 17px 40px;
+  border: none;
 
-    @include font(13px, 400, 19.2px, center);
-    color: $white;
+  @include font(13px, 400, 19.2px, center);
+  color: $white;
 }
-
